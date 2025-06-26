@@ -1,0 +1,439 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+     <style>
+         body {
+             font-family: 'Segoe UI', sans-serif;
+         }
+
+         .navbar-brand img {
+             height: 90px;
+             width: 100%;
+             margin-right: 40px;
+         }
+
+         .carousel-caption {
+             bottom: 30%;
+         }
+
+         .c-img{
+            height: 600px
+         }
+         
+         .cc-img{
+            height: 100%;
+            object-fit: cover;
+         }
+
+         .carousel-caption h1 {
+             margin-left: 90px;
+             font-size: 2.5rem;
+             font-weight: bold;
+         }
+
+         .icon-btn {
+             background: none;
+             border: none;
+             font-size: 18px;
+             color: #000;
+             margin-left: 15px;
+         }
+
+         .carousel-caption {
+             bottom: 30%;
+         }
+
+         .carousel-caption h2 {
+             font-size: 2.5rem;
+             font-weight: bold;
+         }
+
+         .carousel-item img {
+             object-fit: cover;
+             height: 300px;
+         }
+
+         .carousel-caption a {
+             margin-left: 125px;
+         }
+
+         .navbar-collapse a {
+             margin-left: 30px;
+         }
+
+         /* PRODUCT CARD  */
+
+         .product-card {
+             position: relative;
+             overflow: hidden;
+             text-align: center;
+             margin-bottom: 30px;
+         }
+
+         .product-card img {
+             width: 100%;
+             height:350px;
+             object-fit:contain;
+         }
+
+
+         .sale-tag {
+             position: absolute;
+             top: 10px;
+             right: 10px;
+             background: #e74c3c;
+             color: white;
+             padding: 4px 10px;
+             font-size: 0.9rem;
+             border-radius: 4px;
+         }
+
+         .product-info {
+             padding-top: 10px;
+         }
+
+         .price {
+             font-size: 1rem;
+         }
+
+         .old-price {
+             text-decoration: line-through;
+             color: grey;
+             margin-right: 10px;
+         }
+
+         .new-price {
+             color: #e67e22;
+         }
+
+         /* FOOTER */
+         .footer {
+             background-color: #f8f8f8;
+             padding: 50px 0;
+             font-family: 'Segoe UI', sans-serif;
+         }
+
+         .footer h5 {
+             font-weight: 600;
+             margin-bottom: 20px;
+         }
+
+         .footer a {
+             color: #333;
+             text-decoration: none;
+             display: block;
+             margin-bottom: 8px;
+         }
+
+         .footer a:hover {
+             text-decoration: underline;
+         }
+
+         .footer .form-control {
+             border-radius: 0;
+             border: 1px solid #000;
+         }
+
+         .footer .btn-subscribe {
+             background-color: #c7b9b2;
+             color: #fff;
+             border-radius: 0;
+             width: 100%;
+         }
+
+
+         @media (max-width: 767px) {
+             .footer {
+                 text-align: center;
+             }
+
+             .footer .col-md-3,
+             .footer .col-md-6 {
+                 margin-bottom: 30px;
+             }
+         }
+     </style>
+ </head>
+
+ <body>
+
+
+ </html>
+ <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+     <div class="container">
+         <a class="navbar-brand" href="#">
+             <img src="./IMG/images (1).png" alt="Logo">
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="mainNav">
+             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                 <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+                 <li class="nav-item"><a class="nav-link" href="./kurthis.html">KURTHIS</a></li>
+                 <li class="nav-item"><a class="nav-link" href="./bridal.html">BRIDAL</a></li>
+                 <li class="nav-item"><a class="nav-link" href="./saree.html">SAREES</a></li>
+                 <li class="nav-item"><a class="nav-link" href="./anarkali.html">ANARKALIS</a></li>
+                 <li class="nav-item"><a class="nav-link" href="#">SERVICE</a></li>
+             </ul>
+             <div class="d-flex">
+                 <button><input type="search" name="" id="search"></button>
+                 <button class="icon-btn"><i class="fas fa-search"></i></button>
+                 <button class="icon-btn"><i class="fas fa-user"></i></button>
+                 <button class="icon-btn position-relative">
+                     <i class="fas fa-shopping-cart"></i>
+                     <span
+                         class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                 </button>
+             </div>
+         </div>
+     </div>
+ </nav>
+
+ <!-- Hero Section with Carousel -->
+
+ <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+     <div class="carousel-inner">
+         <div class="carousel-item active c-img">
+             <img src="./sarees/bg-01.jpg" class="h-100 w-100 cc-img" alt="...">
+             <div class="carousel-caption text-start">
+                 <h1>SAREES</h1>
+             </div>
+         </div>
+         <div class="carousel-item active c-img">
+             <img src="./sarees/bg-03.jpeg" class="h-100 w-100 cc-img" alt="...">
+             <div class="carousel-caption text-start">
+                 <h1>SAREES</h1>
+             </div>
+         </div>
+
+     </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+     </button>
+ </div>
+ <div class="container py-5">
+     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4">
+
+         <!-- Product 1 -->
+         <div class="col">
+             <div class="product-card">
+                 <img src="./anarkali/img-1.webp" alt="NAL-10">
+
+                 <div class="product-info">
+                     <h6>White Kurtha</h6>
+                     <div class="price">Rs. 18,000.00</div>
+
+                 </div>
+             </div>
+         </div>
+
+         <!-- Product 2 -->
+         <div class="col">
+             <div class="product-card">
+                 <img src="./sarees/saree-02.webp" alt="NAL-3">
+                 <div class="product-info">
+                     <h6>DESIGN SAREE</h6>
+                     <div class="price">Rs. 18,000.00</div>
+                 </div>
+             </div>
+         </div>
+
+         <!-- Product 3 (on sale) -->
+         <div class="col">
+             <div class="product-card">
+
+                 <img src="./sarees/saree-01.webp" alt="NAL-4">
+                 <div class="product-info">
+                     <h6>HALF CROP </h6>
+                     <div class="price">
+
+                         <span class="price">Rs. 14,000.00</span>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+         <!-- Product 4 (on sale) -->
+         <div class="col">
+             <div class="product-card">
+                 <img src="./sarees/saree-03.webp" alt="NAL-5">
+                 <div class="product-info">
+                     <h6>MID CROP BT</h6>
+                     <div class="price">
+
+                         <span class="price">Rs. 23,800.00</span>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!-- Product 5  -->
+         <div class="col">
+             <div class="product-card">
+
+                 <img src="./sarees/saree-04.webp" alt="NAL-4">
+                 <div class="product-info">
+                     <h6>HALF CROP </h6>
+                     <div class="price">
+
+                         <span class="price">Rs. 14,000.00</span>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!-- Product 6  -->
+         <div class="col">
+             <div class="product-card">
+
+                 <img src="./sarees/saree-05.webp" alt="NAL-4">
+                 <div class="product-info">
+                     <h6>HALF CROP </h6>
+                     <div class="price">
+
+                         <span class="price">Rs. 14,000.00</span>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!-- Product 7  -->
+         <div class="col">
+             <div class="product-card">
+
+                 <img src="./sarees/saree-06.webp" alt="NAL-4">
+                 <div class="product-info">
+                     <h6>HALF CROP </h6>
+                     <div class="price">
+
+                         <span class="price">Rs. 14,000.00</span>
+                     </div>
+                 </div>
+             </div>
+         </div> <!-- Product 8 -->
+         <div class="col">
+             <div class="product-card">
+                 <img src="./sarees/saree-07.webp" alt="NAL-5">
+                 <div class="product-info">
+                     <h6>MID CROP BT</h6>
+                     <div class="price">
+
+                         <span class="price">Rs. 23,800.00</span>
+                     </div>
+                 </div>
+             </div>
+         </div> <!-- Product 9  -->
+         <div class="col">
+             <div class="product-card">
+                 <img src="./sarees/saree-08.webp" alt="NAL-5">
+                 <div class="product-info">
+                     <h6>MID CROP BT</h6>
+                     <div class="price">
+
+                         <span class="price">Rs. 23,800.00</span>
+                     </div>
+                 </div>
+             </div>
+         </div> <!-- Product 10 (on sale) -->
+         <div class="col">
+             <div class="product-card">
+                 <img src="./sarees/saree-13.jpg" alt="NAL-5">
+                 <div class="product-info">
+                     <h6>MID CROP BT</h6>
+                     <div class="price">
+
+                         <span class="price">Rs. 23,800.00</span>
+                     </div>
+                 </div>
+             </div>
+         </div> <!-- Product 11 (on sale) -->
+         <div class="col">
+             <div class="product-card">
+                 <img src="./sarees/saree-10.jpg" alt="NAL-5">
+                 <div class="product-info">
+                     <h6>MID CROP BT</h6>
+                     <div class="price">
+
+                         <span class="price">Rs. 23,800.00</span>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!-- Product 8  -->
+         <div class="col">
+             <div class="product-card">
+
+                 <img src="./sarees/saree-11.jpg" alt="NAL-4">
+                 <div class="product-info">
+                     <h6>HALF CROP </h6>
+                     <div class="price">
+
+                         <span class="price">Rs. 14,000.00</span>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+
+ <footer class="footer">
+     <div class="container">
+         <div class="row text-start">
+
+             <!-- Store Info -->
+             <div class="col-md-3">
+                 <h5>GRAVO - CLOTHING STORE,</h5>
+                 <p>77/A Park Road Chennai <br>Chennai– 600 001,Chennai</p>
+                 <p>Email: <a href="">groveclothing1@gmail.com</a></p>
+                 <p>Phone: <a href="tel:+919619336168">+91 9619336168</a></p>
+             </div>
+
+             <!-- Categories -->
+             <div class="col-md-3">
+                 <h5>CATEGORIES</h5>
+                 <a href="#">New arrivals</a>
+                 <a href="#">Anarkalis</a>
+                 <a href="#">Jackets</a>
+                 <a href="#">Kurta Set</a>
+                 <a href="#">Sale</a>
+             </div>
+
+             <!-- Customer Service -->
+             <div class="col-md-3">
+                 <h5>CUSTOMER SERVICES</h5>
+                 <a href="#">Sign In/Register</a>
+                 <a href="#">Terms & Conditions</a>
+                 <a href="#">Privacy Policy</a>
+                 <a href="#">Shipping policy</a>
+                 <a href="#">Refund Policy</a>
+             </div>
+
+             <!-- Subscription -->
+             <div class="col-md-3">
+                 <h5>SUBSCRIBE TO OUR EMAILS</h5>
+                 <form>
+                     <input type="email" class="form-control mb-2" placeholder="Email">
+                     <button type="submit" class="btn btn-subscribe">Subscribe</button>
+                 </form>
+
+             </div>
+
+         </div>
+     </div>
+ </footer>
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+ </body>
